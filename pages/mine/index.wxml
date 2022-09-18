@@ -1,0 +1,147 @@
+<view class="head">
+</view>
+<view class="body">
+    <view class="user" bindtap="Userlogin">
+        <view class="userpicture">
+            <image class="userpicture_img" src="{{userInfo.userpicture}}" mode="aspectFill">
+            </image>
+        </view>
+        <view class="userinfo">
+            <view class="username">
+                {{userInfo.username}}
+            </view>
+            <view class="userlevel">
+                <image class="userlevel_img" src="/icon/LV1.png" mode="">
+
+                </image>
+            </view>
+        </view>
+        <view class="usericon">
+            <image class="usericonpicture" src="/icon/right.png" mode="aspectFill">
+            </image>
+        </view>
+    </view>
+    <view class="operate_text">
+        常用操作
+    </view>
+    <view class="operate">
+        <view class="operateone" bindtap="">
+            <view class="operateone_text">
+                <view class="operateone_text_1">
+                    仓库管理
+                </view>
+                <view class="operateone_text_2">
+                    管理仓库信息
+                </view>
+            </view>
+            <view class="operateone_icon">
+                <image class="operateone_image" src="/icon/fabu.png" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+        <view class="operatetwo" bindtap="chengyuanguanli">
+            <view class="operatetwo_text">
+                <view class="operatetwo_text_1">
+                    成员管理
+                </view>
+                <view class="operatetwo_text_2">
+                    管理下属成员
+                </view>
+            </view>
+            <view class="operatetwo_icon">
+                <image class="operatetwo_image" src="/icon/baoming.png" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+    </view>
+    <view class="button">
+        <view class="button1" bindtap="">
+            <view class="button1_">
+                <image class="button1_icon" src="/icon/zuzhi.png" mode="aspectFill">
+                </image>
+            </view>
+            <view class="button1_text">
+                商品分类
+            </view>
+            <view class="button1_right">
+                <image class="button1_right_icon" src="/icon/right.png" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+        <view class="border1">
+        </view>
+        <view class="button2" bindtap="">
+            <view class="button2_">
+                <image class="button2_icon" src="/icon/geren.png" mode="aspectFill">
+                </image>
+            </view>
+            <view class="button2_text">
+                往来单位
+            </view>
+            <view class="button2_right">
+                <image class="button2_right_icon" src="/icon/right.png" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+        <view class="border2">
+        </view>
+        <view class="button3" bindtap="">
+            <view class="button3_">
+                <image class="button3_icon" src="/icon/faqi.png" mode="aspectFill">
+                </image>
+            </view>
+            <view class="button3_text">
+                成员管理
+            </view>
+            <view class="button3_right">
+                <image class="button3_right_icon" src="/icon/right.png" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+        <view class="border1">
+        </view>
+        <view class="button4" bindtap="">
+            <view class="button4_">
+                <image class="button4_icon" src="/icon/zhaomu.png" mode="aspectFill">
+                </image>
+            </view>
+            <view class="button4_text">
+                邀请成员
+            </view>
+            <view class="button4_right">
+                <image class="button4_right_icon" src="/icon/right.png" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+        <view class="border2">
+        </view>
+        <view class="button5" bindtap="yaoqinma">
+            <view class="button5_">
+                <image class="button5_icon" src="/icon/lianxi.png" mode="aspectFill">
+                </image>
+            </view>
+            <view class="button5_text">
+                邀请码
+            </view>
+            <view class="button5_right">
+                <image class="button5_right_icon" src="/icon/right.png" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+        <view class="border1">
+        </view>
+        <view class="button6" bindtap="tuichudenglu">
+            <view class="button6_">
+                <image class="button6_icon" src="/icon/tuichu.png" mode="aspectFill">
+                </image>
+            </view>
+            <view class="button6_text">
+                退出登录
+            </view>
+            <view class="button6_right">
+                <image class="button6_right_icon" src="/icon/right.png" mode="aspectFill">
+                </image>
+            </view>
+        </view>
+    </view>
+</view>

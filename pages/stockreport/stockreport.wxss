@@ -1,0 +1,213 @@
+page {
+  background-color: #f5f5f5;
+}
+.search {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+}
+.search .search_ {
+  background-color: #f5f5f5;
+  height: 75rpx;
+  width: 75%;
+  margin-left: 50rpx;
+  border-radius: 75rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.search .search_ .search_icon {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 25rpx;
+}
+.search .search_ .search_input {
+  font-size: 30rpx;
+  margin-left: 15rpx;
+}
+.search .cancel {
+  font-size: 30rpx;
+  margin-left: 30rpx;
+  opacity: 0.7;
+}
+.activitylist {
+  width: 100%;
+}
+.activitylist .activitylistfor {
+  width: 95%;
+  height: 250rpx;
+  background-color: white;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  margin-top: 25rpx;
+  border-radius: 15rpx;
+  box-shadow: 3rpx 3rpx 8rpx 2rpx #c8c3c3;
+}
+.activitylist .activitylistfor .activitylistforitem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.activitylist .activitylistfor .activitylistforitem .pic {
+  width: 210rpx;
+  height: 210rpx;
+  margin-left: 30rpx;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+.activitylist .activitylistfor .activitylistforitem .pic .pic_img {
+  width: 210rpx;
+  height: 210rpx;
+  background-color: antiquewhite;
+}
+.activitylist .activitylistfor .activitylistforitem .nav {
+  position: absolute;
+  right: 50rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.activitylist .activitylistfor .activitylistforitem .nav .nav_icon {
+  width: 50rpx;
+  height: 50rpx;
+}
+.activitylist .activitylistfor .activitylistforitem .detail {
+  margin-left: 25rpx;
+  display: flex;
+  flex-direction: column;
+  height: 210rpx;
+  justify-content: center;
+}
+.activitylist .activitylistfor .activitylistforitem .detail .hh {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.activitylist .activitylistfor .activitylistforitem .detail .hh .head {
+  font-size: 35rpx;
+}
+.activitylist .activitylistfor .activitylistforitem .detail .hh .mode {
+  position: absolute;
+  right: 75rpx;
+  width: 75rpx;
+  height: 35rpx;
+  font-size: 25rpx;
+  border: 5rpx solid antiquewhite;
+  border-radius: 15rpx;
+  opacity: 0.5;
+  text-align: center;
+}
+.activitylist .activitylistfor .activitylistforitem .detail .other {
+  margin-top: 10rpx;
+  flex-direction: column;
+  display: flex;
+}
+.activitylist .activitylistfor .activitylistforitem .detail .other .place {
+  display: flex;
+  flex-direction: row;
+  font-size: 25rpx;
+  align-items: center;
+}
+.activitylist .activitylistfor .activitylistforitem .detail .other .place .placetext {
+  opacity: 0.7;
+  margin-left: 15rpx;
+}
+.activitylist .activitylistfor .activitylistforitem .detail .other .time {
+  margin-top: 5rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 25rpx;
+  align-items: center;
+}
+.activitylist .activitylistfor .activitylistforitem .detail .other .time .timetext {
+  opacity: 0.7;
+  margin-left: 15rpx;
+}
+.activitylist .activitylistfor .activitylistforitem .detail .other .num {
+  margin-top: 5rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 25rpx;
+  align-items: center;
+}
+.activitylist .activitylistfor .activitylistforitem .detail .other .num .numtext {
+  opacity: 0.7;
+  margin-left: 15rpx;
+}
+.activitylist .activitylistfor .activitylistforitem .detail .other .classify {
+  margin-top: 5rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 25rpx;
+  align-items: center;
+}
+.activitylist .activitylistfor .activitylistforitem .detail .other .classify .classifytext {
+  opacity: 0.7;
+  margin-left: 15rpx;
+}
+.acticon {
+  width: 30rpx;
+  height: 30rpx;
+}
+.buttom {
+  position: fixed;
+  bottom: 0rpx;
+  height: 150rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+.buttom .one {
+  width: 80%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttom .one .onetext {
+  width: 550rpx;
+  height: 75rpx;
+  border: 5rpx solid #6c99be;
+  background-color: #6c99be;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15rpx;
+  color: white;
+}
+.summary {
+  width: 100%;
+  background-color: white;
+  padding-top: 10px;
+}
+.summary .stockhead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.summary .stockhead .stockhead_ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.summary .stockhead .stockhead_ .num {
+  font-size: 25rpx;
+}
+.summary .container_text {
+  font-size: 35rpx;
+  margin-left: 50rpx;
+}

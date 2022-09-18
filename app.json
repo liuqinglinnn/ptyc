@@ -1,0 +1,45 @@
+{
+    "pages": [
+        "pages/head/index",
+        "pages/analyse/index",
+        "pages/mine/index",
+        "pages/enterWarehouse/enterWarehouse",
+        "pages/adminpeople/adminpeople",
+        "pages/scancode/scancode",
+        "pages/stockreport/stockreport",
+        "pages/invite/invite"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#0cca80",
+        "navigationBarTitleText": "平潭烟草",
+        "navigationBarTextStyle": "white",
+        "onReachBottomDistance": 100
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/head/index",
+                "text": "首页",
+                "iconPath": "icon/home.png",
+                "selectedIconPath": "icon/home.png"
+            },
+            {
+                "pagePath": "pages/analyse/index",
+                "text": "库存分析",
+                "iconPath": "icon/layout.png",
+                "selectedIconPath": "icon/layout.png"
+            },
+            {
+                "pagePath": "pages/mine/index",
+                "text": "我的",
+                "iconPath": "icon/admin.png",
+                "selectedIconPath": "icon/admin.png"
+            }
+        ],
+        "color": "#696969",
+        "selectedColor": "#0cca80"
+    },
+    "sitemapLocation": "sitemap.json",
+    "cloud": true
+}

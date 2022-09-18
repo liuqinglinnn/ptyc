@@ -1,0 +1,39 @@
+<view class="layoutscore">
+    <view class="layoutscore_text" hover-class="none" hover-stop-propagation="false">
+        库位评分：{{score}}
+    </view>
+</view>
+
+<view class="layout" hover-class="none" hover-stop-propagation="false">
+    <view class="layoutlist" wx:for="{{list}}" wx:for-index="idx" wx:for-item="item">
+        <view class="layoutlist_base" hover-class="none" hover-stop-propagation="false">
+            <view class="company">
+                {{item.company}}
+            </view>
+            <view class="title">
+                {{item.title}}
+            </view>
+            <view class="id">
+                序列号:{{item.id}}
+            </view>
+        </view>
+        <view class="layoutlist_other">
+
+            <view class="num">
+                库存:{{item.num}}
+            </view>
+            <view class="layoutlist_other_" hover-class="none" hover-stop-propagation="false">
+                <view class="price">
+                    单价:{{item.price}}
+                </view>
+                <view class="status">
+                    状态：在售
+                </view>
+            </view>
+            <view class="sid">
+                货架号:{{item.sid}}
+            </view>
+        </view>
+    </view>
+
+</view>

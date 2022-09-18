@@ -1,0 +1,26 @@
+<view class="erweima" hover-class="none" hover-stop-propagation="false">
+    <view class="head">
+        <view class="head_pic">
+            <image class="head_pic_img" src="/icon/admin.png" mode="aspectFit"> </image>
+        </view>
+        <view class="head_text">
+            邀请好友
+        </view>
+    </view>
+    <view class="body">
+        <canvas class="body_img" canvas-id="myQrcode"></canvas>
+    </view>
+    <view class="information">
+        <view class="information_pic">
+            <image class="information_pic_img" src="/icon/admin.png" mode="aspectFit"> </image>
+        </view>
+        <view class="information_text">
+            <view class="information_text_name">
+                lql
+            </view>
+            <view class="information_text_detail">
+                邀请别人加入仓库>>1号
+            </view>
+        </view>
+    </view>
+</view>

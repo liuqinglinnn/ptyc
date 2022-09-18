@@ -1,0 +1,68 @@
+page {
+  background-color: #0cca80;
+}
+.erweima {
+  width: 95%;
+  background-color: white;
+  margin-left: 2.5%;
+  border-radius: 15rpx;
+  margin-top: 25rpx;
+}
+.erweima .head {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-top-right-radius: 15rpx;
+  border-top-left-radius: 15rpx;
+}
+.erweima .head .head_pic {
+  width: rpx;
+  margin-left: 25rpx;
+}
+.erweima .head .head_pic .head_pic_img {
+  width: 60rpx;
+  height: 60rpx;
+  color: #0cca80;
+}
+.erweima .head .head_text {
+  margin-left: 25rpx;
+  font-size: 30rpx;
+  color: #0cca80;
+}
+.erweima .body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.erweima .body .body_img {
+  width: 200px;
+  height: 200px;
+}
+.erweima .information {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-bottom-right-radius: 15rpx;
+  border-bottom-left-radius: 15rpx;
+}
+.erweima .information .information_pic {
+  width: rpx;
+  margin-left: 25rpx;
+}
+.erweima .information .information_pic .information_pic_img {
+  width: 60rpx;
+  height: 60rpx;
+  color: #0cca80;
+}
+.erweima .information .information_text {
+  margin-left: 25rpx;
+  font-size: 30rpx;
+  color: #0cca80;
+}

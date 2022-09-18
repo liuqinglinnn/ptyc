@@ -1,0 +1,98 @@
+page {
+  background-color: #ebebeb;
+}
+.layoutscore {
+  margin-left: 50rpx;
+  font-weight: bold;
+  font-size: 40rpx;
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.layout .layoutlist {
+  height: 250rpx;
+  border-radius: 25rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 25rpx;
+  margin-right: 25rpx;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+}
+.layout .layoutlist .layoutlist_base {
+  width: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.layout .layoutlist .layoutlist_base .company {
+  font-size: 30rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.layout .layoutlist .layoutlist_base .title {
+  font-size: 35rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.layout .layoutlist .layoutlist_base .id {
+  font-size: 25rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  opacity: 0.5;
+}
+.layout .layoutlist .layoutlist_other {
+  margin-top: 15rpx;
+  position: absolute;
+  right: 50rpx;
+  width: 250rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.layout .layoutlist .layoutlist_other .num {
+  font-size: 30rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.layout .layoutlist .layoutlist_other .layoutlist_other_ {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.layout .layoutlist .layoutlist_other .layoutlist_other_ .price {
+  font-size: 25rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  opacity: 0.5;
+}
+.layout .layoutlist .layoutlist_other .layoutlist_other_ .status {
+  font-size: 25rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  opacity: 0.5;
+}
+.layout .layoutlist .layoutlist_other .sid {
+  font-size: 25rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  opacity: 0.5;
+}

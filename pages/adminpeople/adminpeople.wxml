@@ -1,0 +1,49 @@
+<view class="search">
+    <view class="search_">
+        <image class="search_icon" src="/icon/search.png" mode="aspectFill">
+        </image>
+        <input class="search_input" value="{{inputvalue}}" type="text" placeholder="搜索成员名" bindinput="inputevent">
+        </input>
+    </view>
+    <view class="cancel" bindtap="cancelsearch">
+        搜索
+    </view>
+</view>
+
+<view class="admin">
+    <view class="adminpeople">
+        <view class="people_for_left">
+            <image class="people_for_left_img" src=" /icon/admin.png" mode="aspectFit|aspectFill|widthFix"> </image>
+        </view>
+        <view class="people_for_right">
+            <view class="people_for_right_name">
+                lql
+            </view>
+            <view class="people_for_right_quanxian" style="color: #0cca80;">
+                管理员
+            </view>
+
+        </view>
+    </view>
+    <view class="people">
+        <view class="people_for" wx:for="{{peoplelist}}" wx:for-index="idx" wx:for-item="item">
+
+            <view class="people_for_left">
+                <image class="people_for_left_img" src="{{item.img}}" mode="aspectFit|aspectFill|widthFix"> </image>
+            </view>
+            <view class="people_for_right">
+                <view class="people_for_right_name">
+                    {{item.name}}
+                </view>
+                <view class="people_for_right_quanxian">
+                    团队成员{{item.quanxian}}
+                </view>
+
+            </view>
+            <view class="people_buttom">
+                权限>
+            </view>
+
+        </view>
+    </view>
+</view>

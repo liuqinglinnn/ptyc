@@ -1,0 +1,112 @@
+page {
+    background-color: rgb(235, 235, 235);
+}
+
+.layoutscore {
+    margin-left: 50rpx;
+    font-weight: bold;
+    font-size  : 40rpx;
+}
+
+.layout {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    width          : 100%;
+
+    .layoutlist {
+        height          : 250rpx;
+        border-radius   : 25rpx;
+        background-color: white;
+        display         : flex;
+        flex-direction  : row;
+        align-items     : center;
+        margin-left     : 25rpx;
+        margin-right    : 25rpx;
+        margin-top      : 25rpx;
+        margin-bottom   : 25rpx;
+
+        .layoutlist_base {
+            width          : 200rpx;
+            display        : flex;
+            flex-direction : column;
+            justify-content: center;
+            align-items    : center;
+
+            .company {
+                font-size    : 30rpx;
+                margin-left  : 10rpx;
+                margin-right : 10rpx;
+                margin-top   : 10rpx;
+                margin-bottom: 10rpx;
+            }
+
+            .title {
+                font-size    : 35rpx;
+                margin-left  : 10rpx;
+                margin-right : 10rpx;
+                margin-top   : 10rpx;
+                margin-bottom: 10rpx;
+            }
+
+            .id {
+                font-size    : 25rpx;
+                margin-left  : 10rpx;
+                margin-right : 10rpx;
+                margin-top   : 10rpx;
+                margin-bottom: 10rpx;
+                opacity      : 0.5;
+            }
+        }
+
+        .layoutlist_other {
+            margin-top     : 15rpx;
+            position       : absolute;
+            right          : 50rpx;
+            width          : 250rpx;
+            display        : flex;
+            flex-direction : column;
+            justify-content: center;
+            align-items    : flex-end;
+
+            .num {
+                font-size    : 30rpx;
+                margin-left  : 10rpx;
+                margin-right : 10rpx;
+                margin-top   : 10rpx;
+                margin-bottom: 10rpx;
+            }
+
+            .layoutlist_other_ {
+                display       : flex;
+                flex-direction: row;
+                align-items   : center;
+
+                .price {
+                    font-size    : 25rpx;
+                    margin-top   : 10rpx;
+                    margin-bottom: 10rpx;
+                    opacity      : 0.5;
+                }
+
+                .status {
+                    font-size    : 25rpx;
+                    margin-left  : 10rpx;
+                    margin-top   : 10rpx;
+                    margin-bottom: 10rpx;
+                    opacity      : 0.5;
+                }
+            }
+
+
+            .sid {
+                font-size    : 25rpx;
+                margin-left  : 10rpx;
+                margin-right : 10rpx;
+                margin-top   : 10rpx;
+                margin-bottom: 10rpx;
+                opacity      : 0.5;
+            }
+        }
+    }
+}

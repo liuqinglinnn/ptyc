@@ -1,0 +1,49 @@
+<view class="head">
+    <view class="headtext">
+        商品统计
+    </view>
+    <view class="headnum">
+        <view class="headnum_" wx:for="{{summary}}" wx:for-index="idx" wx:for-item="item">
+            <view class="headt">
+                {{item.name}}
+            </view>
+            <view class="headt">
+                {{item.num}}
+            </view>
+        </view>
+    </view>
+</view>
+<view class="body">
+    <view class="body_time">
+        <picker class="time_date" mode="date" value="{{startdata}}" end="2022-06-01" end="2025-09-01"
+            bindchange="EnddateChange">
+            {{startdata}}
+        </picker>
+        ~
+        <picker class="time_time" mode="time" value="{{startdata}}" end="00:00" end="24:00" bindchange="EndTimeChange">
+            {{startdata}}
+        </picker>
+        <view class="timebuttom">
+            查询
+        </view>
+
+    </view>
+    <view class="body_num">
+        <view class="body_num_">
+            <view class="" hover-class="none" hover-stop-propagation="false">
+                入库合计：{{ database[0].entertotal}}
+            </view>
+            <view class="" hover-class="none" hover-stop-propagation="false">
+                入库额：{{database[0].entercount}}
+            </view>
+        </view>
+        <view class="body_num_">
+            <view class="" hover-class="none" hover-stop-propagation="false">
+                入库合计：{{ database[1].outtotal}}
+            </view>
+            <view class="" hover-class="none" hover-stop-propagation="false">
+                入库额：{{database[1].outcount}}
+            </view>
+        </view>
+    </view>
+</view>

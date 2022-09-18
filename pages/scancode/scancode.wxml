@@ -1,0 +1,104 @@
+<view class="biankuang">
+  <view class="title">
+    <view class="title_text">
+      烟草名称
+    </view>
+    <input class="title_input" value="{{title}}" type="text" placeholder="请输入烟草名称" maxlength="50" bindinput="STitle">
+    </input>
+  </view>
+  <view class="border"></view>
+  <view class="title">
+    <view class="title_text">
+      烟草编号
+    </view>
+    <input class="title_input" value="{{sid}}" type="text" placeholder="请输入烟草编号" maxlength="50" bindinput="SSid">
+    </input>
+  </view>
+  <view class="border"></view>
+  <view class="time">
+    <view class="time_text">
+      过期日期
+    </view>
+    <view class="time_">
+      <picker class="time_date" mode="date" value="{{sdate}}" start="2022-06-01" end="2025-09-01" bindchange="STime">
+        <view>
+          {{sdate}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="border"></view>
+  <view class="house">
+    <view class="house_text">
+      入库仓库
+    </view>
+    <picker class="house_picker" bindchange="HouseChange" value="{{index1}}" range="{{mode}}">
+      {{house[index1]}}
+    </picker>
+  </view>
+
+  <view class="border"></view>
+  <view class="title">
+    <view class="title_text">
+      入库单价
+    </view>
+    <input class="title_input" value="{{sprice}}" type="number" placeholder="请输入烟草名称" maxlength="50" bindinput="Sprice">
+    </input>
+  </view>
+  <view class="title">
+    <view class="title_text">
+      入库数量
+    </view>
+    <input class="title_input" value="{{snum}}" type="number" placeholder="请输入烟草名称" maxlength="50" bindinput="Snum">
+    </input>
+  </view>
+  <view class="border"></view>
+  <view class="content">
+    <view class="content_text">
+      入库备注
+    </view>
+    <textarea class="content_input" value="{{content}}" placeholder="请输入描述" maxlength="1000" auto-height="true"
+      bindinput="SContent" bindlinechange="%{15}">
+    </textarea>
+  </view>
+  <view class="border"></view>
+  <view class="title">
+    <view class="title_text">
+      审核人
+    </view>
+    <input class="title_input" value="{{admin}}" type="text" placeholder="请输入审核人名" maxlength="50" bindinput="Sadmin">
+    </input>
+  </view>
+  <view class="border"></view>
+  <view class="UpLoadPicture">
+    <view class="UpLoadPicture_text">
+      入库图片
+    </view>
+    <view class="UpLoadPicture_" wx:if="{{picture.length==0}}">
+      <image class="UpLoadPicture_img" src="/icon/imageinput.png" mode="scaleToFill" bindtap="UpLoadPicture">
+      </image>
+    </view>
+    <view class="UpLoadPicture2_" wx:if="{{picture.length!=0}}">
+      <view class="UpLoadPicture2_item" wx:for="{{picture}}" wx:for-index="idx" wx:for-item="item">
+        <view class="UpLoadPicture2_item_">
+          <image class="UpLoadPicture2_img" src="{{item.tempFilePath}}" mode="aspectFill">
+          </image>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="end">
+  <view class="save" bindtap="Scan">
+    <view>
+      扫描条码
+    </view>
+  </view>
+  <view class="yes" bindtap="Submit">
+    <view>
+      确认入库
+    </view>
+  </view>
+</view>

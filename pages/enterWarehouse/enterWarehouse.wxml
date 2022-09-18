@@ -1,0 +1,45 @@
+<form class="enter_form" bindsubmit="formSubmit" bindreset="">
+    <view class="orderlist">
+        <view class="scancode">
+            <view class="scancode_text" bindtap="scancodenav">
+                新增商品
+            </view>
+        </view>
+        <view class="orderitem" wx:for="{{order}}" wx:for-index="idx" wx:for-item="item">
+            <view class="orderitem_product">
+                <view class="orderitem_base">
+                    <view class="orderitem_product_name">
+                        {{item.title}}
+                    </view>
+                    <view class="orderitem_product_pid">
+                        序列号:{{item.sid}}
+                    </view>
+                </view>
+                <view class="orderitem_other">
+                    <view class="orderitem_other_ptotalprice">
+                        ￥{{item.sprice}}
+                    </view>
+                    <view class="orderitem_other_pnum">
+                        共{{item.snum}}件
+                    </view>
+                </view>
+            </view>
+            <view class="itembutton">
+                <view class="delbutton">
+                    删除
+                </view>
+                <view class="revbutton">
+                    修改
+                </view>
+            </view>
+
+        </view>
+
+    </view>
+
+    <view class="submitbutton">
+        <view class="">
+            确认入库
+        </view>
+    </view>
+</form>

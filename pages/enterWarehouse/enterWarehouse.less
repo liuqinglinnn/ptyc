@@ -1,0 +1,114 @@
+page {
+    background-color: #f2f2f2;
+}
+
+
+.orderlist {
+    margin-top    : 20rpx;
+    width         : 100%;
+    display       : flex;
+    flex-direction: column;
+
+    .scancode {
+        margin-left     : 25%;
+        margin-top      : 25rpx;
+        margin-bottom   : 25rpx;
+        width           : 50%;
+        height          : 75rpx;
+        background-color: white;
+        border-radius   : 150rpx;
+        display         : flex;
+        justify-content : center;
+        align-items     : center;
+        font-size       : 30rpx;
+        letter-spacing  : 2rpx;
+        box-shadow      : 0px 0px 3px rgb(125, 125, 125);
+
+    }
+
+    .orderitem {
+        display         : flex;
+        flex-direction  : column;
+        height          : 270rpx;
+        width           : 90%;
+        margin-left     : 5%;
+        margin-top      : 20rpx;
+        background-color: white;
+        border-radius   : 20rpx;
+
+        .orderitem_product {
+            margin-top    : 50rpx;
+            margin-left   : 25rpx;
+            margin-right  : 25rpx;
+            padding-bottom: 25rpx;
+            display       : flex;
+            flex-direction: row;
+            border-bottom : 5rpx solid rgb(235, 235, 235);
+
+            .orderitem_base {
+
+                .orderitem_product_name {
+                    font-size: 40rpx;
+                }
+
+                .orderitem_product_pid {
+                    margin-top: 15rpx;
+                    font-size : 30rpx;
+                    opacity   : 0.5;
+                }
+            }
+
+            .orderitem_other {
+                margin-left: 50%;
+
+                .orderitem_other_ptotalprice {
+                    margin-top: 10rpx;
+                    font-size : 30rpx;
+                }
+
+                .orderitem_other_pnum {
+                    margin-top: 10rpx;
+                    font-size : 30rpx;
+                    opacity   : 0.5;
+                }
+            }
+        }
+
+        .itembutton {
+            display       : flex;
+            flex-direction: row;
+            margin-left   : 70%;
+            margin-top    : 20rpx;
+            margin-bottom : 20rpx;
+
+            .delbutton {
+                font-size: 30rpx;
+                width    : 100rpx;
+
+            }
+
+            .revbutton {
+                font-size: 30rpx;
+                width    : 100rpx;
+            }
+        }
+    }
+}
+
+
+.submitbutton {
+    margin-left     : 25%;
+    margin-top      : 25rpx;
+    margin-bottom   : 25rpx;
+    width           : 50%;
+    height          : 75rpx;
+    background-color: white;
+    border-radius   : 150rpx;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    font-size       : 30rpx;
+    letter-spacing  : 2rpx;
+    box-shadow      : 0px 0px 3px rgb(125, 125, 125);
+
+}

@@ -1,0 +1,54 @@
+<view class="stockhead">
+    <view class="stockhead_" wx:for="{{simdata}}" wx:for-index="idx" wx:for-item="item">
+        <view class="name">
+            {{item.name}}
+        </view>
+        <view class="num">
+            总数：{{item.num}}
+        </view>
+    </view>
+</view>
+
+<view class="container_text" hover-class="none" hover-stop-propagation="false">
+    近七日出入库概况
+</view>
+<view class="container">
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+</view>
+<view class="showallorder" hover-class="none" hover-stop-propagation="false">
+    <view class="showallorder_text" hover-class="none" hover-stop-propagation="false">
+        筛选商品
+    </view>
+    <view class="showallorder_" hover-class="none" hover-stop-propagation="false">
+        <view class="showallorder_text">
+            红狼
+        </view>
+        <image class="showallorder_image" src="/icon/down.png" mode="aspectFill">
+        </image>
+    </view>
+</view>
+<view class="container_text" hover-class="none" hover-stop-propagation="false">
+    当前选择商品概况
+</view>
+<view class="container">
+    <canvas canvas-id="lineCanvas2" disable-scroll="true" class="canvas" bindtouchstart="touchHandler2"></canvas>
+</view>
+<view class="stockhead2">
+    <view class="stockhead2_" wx:for="{{simdata2}}" wx:for-index="idx" wx:for-item="item">
+        <view class="name2">
+            {{item.name}}
+        </view>
+        <view class="num2">
+            总数：{{item.num}}
+        </view>
+    </view>
+</view>
+<view class="showallorder" hover-class="none" hover-stop-propagation="false">
+    <view class="showallorder_text" hover-class="none" hover-stop-propagation="false">
+        查看所有订单
+    </view>
+    <view class="showallorder_" hover-class="none" hover-stop-propagation="false">
+        <image class="showallorder_image2" style="width:40rpx;height:40rpx;" src="/icon/right.png" mode="aspectFill">
+        </image>
+    </view>
+</view>
