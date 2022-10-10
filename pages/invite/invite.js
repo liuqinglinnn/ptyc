@@ -13,7 +13,7 @@ Page({
       foreground: '#000000',
       text: '学姐中秋快乐',  // 必须，二维码内容
       image: {
-        imageResource: '../../icon/baoming.png',
+        imageResource: '',
         dx: 70,
         dy: 70,
         dWidth: 60,

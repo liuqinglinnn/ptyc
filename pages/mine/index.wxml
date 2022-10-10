@@ -49,7 +49,7 @@
                 </view>
             </view>
             <view class="operatetwo_icon">
-                <image class="operatetwo_image" src="/icon/baoming.png" mode="aspectFill">
+                <image class="operatetwo_image" src="/icon/faqi.png" mode="aspectFill">
                 </image>
             </view>
         </view>
@@ -80,21 +80,6 @@
             </view>
             <view class="button2_right">
                 <image class="button2_right_icon" src="/icon/right.png" mode="aspectFill">
-                </image>
-            </view>
-        </view>
-        <view class="border2">
-        </view>
-        <view class="button3" bindtap="">
-            <view class="button3_">
-                <image class="button3_icon" src="/icon/faqi.png" mode="aspectFill">
-                </image>
-            </view>
-            <view class="button3_text">
-                成员管理
-            </view>
-            <view class="button3_right">
-                <image class="button3_right_icon" src="/icon/right.png" mode="aspectFill">
                 </image>
             </view>
         </view>

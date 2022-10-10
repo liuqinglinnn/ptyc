@@ -1,90 +1,115 @@
-<view class="title1">
-    平潭烟草
+<view class="zhezhao">
+
 </view>
-<view class="title2">
-    数字化转型小程序
-</view>
-<view class="stockhead">
-    <view class="stockhead_" wx:for="{{simdata}}" wx:for-index="idx" wx:for-item="item">
-        <view class="name">
-            {{item.name}}
-        </view>
-        <view class="num">
-            总数：{{item.num}}
+<view class="body">
+    <view class="title1">
+        平潭烟草
+    </view>
+    <view class="title2">
+        数字化转型小程序
+    </view>
+    <view class="stockhead">
+        <view class="stockhead_" wx:for="{{simdata}}" wx:for-index="idx" wx:for-item="item">
+            <view class="name">
+                {{item.name}}
+            </view>
+            <view class="num">
+                总数：{{item.num}}
+            </view>
         </view>
     </view>
-</view>
-<view class="container">
-    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
-</view>
-<view class="operate">
+    <view class="container">
+        <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+    </view>
     <view class="operate_text">
         操作
     </view>
-    <view class="operate_content">
-        <view class="operate_content_" wx:for="{{operate}}" wx:key="icon" wx:for-index="idx" wx:for-item="item"
-            bindtap="chooseoperate" data-ido="{{item.ido}}">
-            <view class="operate_content_icon">
-                <image class="operate_content_icon_image" src="{{item.icon}}">
-                </image>
+    <view class="operate">
+        <view class="operate_content">
+            <view class="oleft">
+                <view class="ruku" bindtap="enterwarehouse">
+                    <view class="rukupic">
+                        <image class="rukupic_" src="/icon/ruku.png"> </image>
+                    </view>
+                    <view class="rukutex">
+                        入库
+                    </view>
+                </view>
+                <view class="ruku">
+                    <view class="rukupic">
+                        <image class="rukupic_" src="/icon/ruku.png"> </image>
+                    </view>
+                    <view class="rukutex">
+                        出库
+                    </view>
+                </view>
             </view>
-            <view class="operate_content_name">
-                {{item.name}}
+            <view class="oleft">
+                <view class="ruku" bindtap="enterlayout">
+                    <view class="rukupic">
+                        <image class="rukupic_" src="/icon/buju.png"> </image>
+                    </view>
+                    <view class="rukutex">
+                        仓库布局
+                    </view>
+                </view>
+                <view class="ruku">
+                    <view class="rukupic">
+                        <image class="rukupic_" src="/icon/jilu.png"> </image>
+                    </view>
+                    <view class="rukutex">
+                        记录
+                    </view>
+                </view>
             </view>
         </view>
     </view>
-</view>
-<!--记录-->
-<view class="record">
-    <view class="record_text">
-        记录
-    </view>
-    <view class="record_content">
-        <view class="record_content_" wx:for="{{record}}" wx:key="icon" wx:for-index="idx" wx:for-item="item"
-            bindtap="chooserecord" data-ido="{{item.ido}}">
-            <view class="record_content_icon">
-                <image class="record_content_icon_image" src="{{item.icon}}">
-                </image>
-            </view>
-            <view class="record_content_name">
-                {{item.name}}
-            </view>
-        </view>
-    </view>
-</view>
-<!--库存-->
-<view class="stock">
-    <view class="stock_text">
+    <!--库存-->
+    <view class="operate_text2">
         库存
     </view>
-    <view class="stock_content">
-        <view class="stock_content_" wx:for="{{stock}}" wx:key="icon" wx:for-index="idx" wx:for-item="item"
-            bindtap="choosestock" data-ido="{{item.ido}}">
-            <view class="stock_content_icon">
-                <image class="stock_content_icon_image" src="{{item.icon}}">
-                </image>
+    <view class="operate">
+        <view class="operate_content">
+            <view class="oleft2">
+                <view class="ruku2" bindtap="enterstock">
+                    <view class="rukupic2">
+                        <image class="rukupic_2" src="/icon/guoqi.png"> </image>
+                    </view>
+                    <view class="rukutex2">
+                        库存报告
+                    </view>
+                </view>
             </view>
-            <view class="stock_content_name">
-                {{item.name}}
+            <view class="oleft">
+                <view class="ruku" bindtap="enterstockwarm">
+                    <view class="rukupic">
+                        <image class="rukupic_" src="/icon/kucunbaogao.png"> </image>
+                    </view>
+                    <view class="rukutex">
+                        库存预警
+                    </view>
+                </view>
+                <view class="ruku" bindtap="entertimeoutwarm">
+                    <view class="rukupic">
+                        <image class="rukupic_" src="/icon/kucunyujin.png"> </image>
+                    </view>
+                    <view class="rukutex">
+                        过期预警
+                    </view>
+                </view>
             </view>
         </view>
     </view>
-</view>
-<!--其他-->
-<view class="other">
-    <view class="other_content">
-        <view class="other_content_" wx:for="{{other}}" wx:key="icon" wx:for-index="idx" wx:for-item="item"
-            bindtap="chooseother" data-ido="{{item.ido}}">
-            <view class="other_content_icon">
-                <image class="other_content_icon_image" src="{{item.icon}}">
-                </image>
-            </view>
-            <view class="other_content_name">
-                {{item.name}}
-            </view>
+    <!--其他-->
+    <view class="operate_text">
+        通知
+    </view>
+    <view class="other">
+        <view class="other_content">
+            通知1,只是例子
         </view>
     </view>
-</view>
-<view class="bottomtext">
-    下拉可刷新首页数据
+    <view class="bottomtext">
+        下拉可刷新首页数据
+    </view>
 </view>

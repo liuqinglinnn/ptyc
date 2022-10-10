@@ -1,10 +1,23 @@
 page {
   background-color: #f5f5f5;
 }
+.zhezhao {
+  width: 100%;
+  height: 1700rpx;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  background: -webkit-linear-gradient(#0cca80, #f5f5f5);
+}
+.bodye {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
 .head {
-  width: 90%;
+  width: 95%;
   background-color: white;
-  margin-left: 5%;
+  margin-left: 2.5%;
   margin-top: 20rpx;
   border-radius: 15rpx;
 }
@@ -12,6 +25,8 @@ page {
   font-size: 30rpx;
   padding-top: 20rpx;
   padding-left: 20rpx;
+  border-bottom: 2rpx solid #f5f5f5;
+  padding-bottom: 15rpx;
 }
 .head .headnum {
   display: flex;
@@ -24,23 +39,22 @@ page {
 }
 .head .headnum .headnum_ {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 15rpx;
-  background-color: rgba(74, 173, 193, 0.904);
-  width: 250rpx;
-  margin: 20rpx;
-  color: white;
+  width: 33%;
+  color: black;
 }
-.head .headnum .headnum_ .headt {
-  font-size: 25rpx;
-  padding: 10rpx;
+.head .headnum .headnum_ .headnum_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .body {
-  width: 90%;
+  width: 95%;
   background-color: white;
-  margin-left: 5%;
+  margin-left: 2.5%;
   margin-top: 30rpx;
   border-radius: 15rpx;
 }
@@ -50,7 +64,6 @@ page {
   align-items: center;
   font-size: 30rpx;
   margin-top: 30rpx;
-  margin-left: 20rpx;
   height: 100rpx;
   border-bottom: 2rpx solid #f5f5f5;
 }
@@ -58,12 +71,10 @@ page {
   padding: 20rpx;
 }
 .body .body_time .timebuttom {
-  border-radius: 5rpx;
-  width: 100rpx;
+  border-radius: 10rpx;
   text-align: center;
-  background-color: antiquewhite;
-  position: absolute;
-  right: 75rpx;
+  padding: 10rpx;
+  margin: 20rpx;
 }
 .body .body_num {
   display: flex;
@@ -71,17 +82,214 @@ page {
   justify-content: center;
   align-items: center;
   font-size: 30rpx;
+  border-bottom: 2rpx solid #f5f5f5;
+  text-align: center;
 }
 .body .body_num .body_num_ {
   margin-top: 30rpx;
-  margin-left: 30rpx;
-  margin-right: 30rpx;
   margin-bottom: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+.container {
+  margin-top: 30rpx;
+  padding: 0;
+  border-radius: 25rpx;
+  overflow: hidden;
+  margin-left: 2.5%;
+  width: 95%;
+  background-color: white;
+}
+.container .canvas {
+  border-radius: 5rpx;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 250rpx;
-  background-color: antiquewhite;
+  width: 100%;
+  height: 200px;
+}
+.headt {
+  font-size: 30rpx;
+  padding: 10rpx;
+}
+.headtn {
+  font-size: 40rpx;
+  padding: 10rpx;
+  color: #0cca80;
+}
+.heado {
+  font-size: 20rpx;
+  opacity: 0.7;
+}
+.classify {
+  width: 95%;
+  background-color: white;
+  margin-left: 2.5%;
+  margin-top: 30rpx;
   border-radius: 15rpx;
+}
+.classify .cltitle {
+  font-size: 30rpx;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  border-bottom: 2rpx solid #f5f5f5;
+  padding-bottom: 15rpx;
+}
+.classify .clfor {
+  width: 100%;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.classify .clfor .clfor_img .clfor_img_ {
+  width: 75rpx;
+  height: 75rpx;
+}
+.classify .clfor .clfor_imf .clfor_imf_ {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.classify .clfor .clfor_imf .clfor_imf_ .classify_num {
+  margin-left: 20rpx;
+}
+.classify .clfor .clfor_imf .clfor_imf_pro {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.classify .clfor .clfor_price {
+  position: absolute;
+  left: 70%;
+  font-size: 40rpx;
+  padding: 10rpx;
+  color: #0cca80;
+}
+.orderlist {
+  width: 100%;
+}
+.orderlist .orderlistfor {
+  width: 95%;
+  height: 250rpx;
+  background-color: white;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  margin-top: 25rpx;
+  border-radius: 15rpx;
+}
+.orderlist .orderlistfor .orderlistforitem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.orderlist .orderlistfor .orderlistforitem .picx {
+  width: 210rpx;
+  height: 210rpx;
+  margin-left: 30rpx;
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+.orderlist .orderlistfor .orderlistforitem .picx .picx_img {
+  width: 210rpx;
+  height: 210rpx;
+  background-color: antiquewhite;
+}
+.orderlist .orderlistfor .orderlistforitem .nav {
+  position: absolute;
+  right: 50rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.orderlist .orderlistfor .orderlistforitem .nav .nav_icon {
+  width: 50rpx;
+  height: 50rpx;
+}
+.orderlist .orderlistfor .orderlistforitem .detail {
+  margin-left: 25rpx;
+  display: flex;
+  flex-direction: column;
+  height: 210rpx;
+  justify-content: center;
+}
+.orderlist .orderlistfor .orderlistforitem .detail .hh {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.orderlist .orderlistfor .orderlistforitem .detail .hh .tit {
+  font-size: 35rpx;
+}
+.orderlist .orderlistfor .orderlistforitem .detail .hh .mode {
+  position: absolute;
+  right: 75rpx;
+  width: 120rpx;
+  height: 35rpx;
+  font-size: 25rpx;
+  border: 5rpx solid antiquewhite;
+  border-radius: 15rpx;
+  opacity: 0.5;
+  text-align: center;
+}
+.orderlist .orderlistfor .orderlistforitem .detail .other {
+  margin-top: 10rpx;
+  flex-direction: column;
+  display: flex;
+}
+.orderlist .orderlistfor .orderlistforitem .detail .other .place {
+  display: flex;
+  flex-direction: row;
+  font-size: 25rpx;
+  align-items: center;
+}
+.orderlist .orderlistfor .orderlistforitem .detail .other .place .placetext {
+  opacity: 0.7;
+  margin-left: 15rpx;
+}
+.orderlist .orderlistfor .orderlistforitem .detail .other .time {
+  margin-top: 5rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 25rpx;
+  align-items: center;
+}
+.orderlist .orderlistfor .orderlistforitem .detail .other .time .timetext {
+  opacity: 0.7;
+  margin-left: 15rpx;
+}
+.orderlist .orderlistfor .orderlistforitem .detail .other .num {
+  margin-top: 5rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 25rpx;
+  align-items: center;
+}
+.orderlist .orderlistfor .orderlistforitem .detail .other .num .numtext {
+  opacity: 0.7;
+  margin-left: 15rpx;
+}
+.orderlist .orderlistfor .orderlistforitem .detail .other .price {
+  margin-top: 5rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 25rpx;
+  align-items: center;
+}
+.orderlist .orderlistfor .orderlistforitem .detail .other .price .pricetext {
+  opacity: 0.7;
+  margin-left: 15rpx;
+}
+.acticon {
+  width: 30rpx;
+  height: 30rpx;
 }

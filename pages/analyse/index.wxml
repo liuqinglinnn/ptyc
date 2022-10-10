@@ -1,48 +1,181 @@
-<view class="head">
-    <view class="headtext">
-        商品统计
-    </view>
-    <view class="headnum">
-        <view class="headnum_" wx:for="{{summary}}" wx:for-index="idx" wx:for-item="item">
-            <view class="headt">
-                {{item.name}}
-            </view>
-            <view class="headt">
-                {{item.num}}
+<view class="zhezhao" hover-class="none" hover-stop-propagation="false">
+
+</view>
+
+<view class="bodye" hover-class="none" hover-stop-propagation="false">
+    <view class="head">
+        <view class="headtext">
+            库存分析
+        </view>
+        <view class="headnum">
+            <view class="headnum_" wx:for="{{summary}}" wx:for-index="idx" wx:for-item="item">
+                <view class="headnum_right">
+                    <view class="headt">
+                        {{item.name}}
+                    </view>
+                    <view class="headtn">
+                        {{item.num}}
+                    </view>
+                </view>
             </view>
         </view>
     </view>
-</view>
-<view class="body">
-    <view class="body_time">
-        <picker class="time_date" mode="date" value="{{startdata}}" end="2022-06-01" end="2025-09-01"
-            bindchange="EnddateChange">
-            {{startdata}}
-        </picker>
-        ~
-        <picker class="time_time" mode="time" value="{{startdata}}" end="00:00" end="24:00" bindchange="EndTimeChange">
-            {{startdata}}
-        </picker>
-        <view class="timebuttom">
-            查询
+    <view class="body">
+        <view class="body_time">
+            <picker class="time_date" mode="date" value="{{startdata}}" bindchange="EnddateChange">
+                {{startdata}}
+            </picker>
+            <view class="">
+                ~
+            </view>
+            <picker class="time_time" mode="date" value="{{enddata}}" bindchange="EndTimeChange">
+                {{enddata}}
+            </picker>
+            <view class="timebuttom">
+                全部商品
+            </view>
+        </view>
+        <view class="body_num">
+            <view class="body_num_">
+                <view class="">
+                    <view class="headt">
+                        入库合计
+                    </view>
+                    <view class="headtn">
+                        {{ database[0].entertotal}}
+                    </view>
+                    <view class="heado">
+                        较上月+30
+                    </view>
+                </view>
+            </view>
+            <view class="body_num_">
+                <view class="">
+                    <view class="headt">
+                        入库金额
+                    </view>
+                    <view class="headtn">
+                        {{database[0].entercount}}
+                    </view>
+                    <view class="heado">
+                        较上月+30
+                    </view>
+                </view>
+            </view>
+            <view class="body_num_">
+                <view class="">
+                    <view class="headt">
+                        出库合计
+                    </view>
+                    <view class="headtn">
+                        {{ database[1].outtotal}}
+                    </view>
+                    <view class="heado">
+                        较上月+30
+                    </view>
+                </view>
+            </view>
+            <view class="body_num_">
+                <view class="">
+                    <view class="headt">
+                        出库金额
+                    </view>
+                    <view class="headtn">
+                        {{database[1].outcount}}
+                    </view>
+                    <view class="heado">
+                        较上月+30
+                    </view>
+                </view>
+            </view>
         </view>
 
-    </view>
-    <view class="body_num">
-        <view class="body_num_">
-            <view class="" hover-class="none" hover-stop-propagation="false">
-                入库合计：{{ database[0].entertotal}}
-            </view>
-            <view class="" hover-class="none" hover-stop-propagation="false">
-                入库额：{{database[0].entercount}}
-            </view>
+
+        <view class="container">
+            <canvas canvas-id="columnCanvas" disable-scroll="true" class="canvas"
+                bindtouchstart="touchHandler"></canvas>
         </view>
-        <view class="body_num_">
-            <view class="" hover-class="none" hover-stop-propagation="false">
-                入库合计：{{ database[1].outtotal}}
+    </view>
+    <view class="classify">
+        <view class="cltitle">
+            分类
+        </view>
+        <view class="clfor" wx:for="{{classify}}" wx:for-item="item">
+            <view class="clfor_img">
+                <image class="clfor_img_" src="../../icon/qian.png">
+                </image>
             </view>
-            <view class="" hover-class="none" hover-stop-propagation="false">
-                入库额：{{database[1].outcount}}
+            <view class="clfor_imf">
+                <view class="clfor_imf_">
+                    <view class="classify_name">
+                        {{item.name}}
+                    </view>
+                    <view class="classify_num">
+                        {{item.num}}单,20%
+                    </view>
+                </view>
+                <view class="clfor_imf_pro">
+                    <progress percent="20" stroke-width="3" />
+                </view>
+            </view>
+            <view class="clfor_price">
+                ￥{{item.price}}
+            </view>
+
+        </view>
+    </view>
+    <view class="orderlist">
+        <view class="orderlistfor" wx:for="{{activity}}" wx:for-index="idx" wx:for-item="item">
+            <view class="orderlistforitem" hover-class="none" hover-stop-propagation="false" bindtap="showdetail"
+                data-id="{{item.id}}">
+                <view class="picx" hover-class="none" hover-stop-propagation="false">
+                    <image class="picx_img" src="{{item.picture}}" mode="aspectFill">
+                    </image>
+                </view>
+                <view class="detail" hover-class="none" hover-stop-propagation="false">
+                    <view class="hh">
+                        <view class="tit" hover-class="none" hover-stop-propagation="false">
+                            {{item.name}}
+                        </view>
+                        <view class="mode" hover-class="none" hover-stop-propagation="false">
+                            {{item.mode}}
+                        </view>
+                    </view>
+                    <view class="other" hover-class="none" hover-stop-propagation="false">
+                        <view class="place">
+                            <image class="acticon" src="/icon/place.png" mode="aspectFill">
+                            </image>
+                            <view class="placetext">
+                                {{item.oplace}}
+                            </view>
+                        </view>
+                        <view class="time">
+                            <image class="acticon" src="/icon/time.png" mode="aspectFill">
+                            </image>
+                            <view class="timetext">
+                                {{item.otime}}
+                            </view>
+                        </view>
+                        <view class="num">
+                            <image class="acticon" src="/icon/people.png" mode="aspectFill">
+                            </image>
+                            <view class="numtext">
+                                {{item.onum}}
+                            </view>
+                        </view>
+                        <view class="price">
+                            <image class="acticon" src="/icon/classify.png" mode="aspectFill">
+                            </image>
+                            <view class="pricetext">
+                                {{item.price}}
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="nav">
+                    <image class="nav_icon" src="/icon/arrow-right.png" mode="aspectFill">
+                    </image>
+                </view>
             </view>
         </view>
     </view>

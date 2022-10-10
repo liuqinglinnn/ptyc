@@ -7,8 +7,11 @@
         "pages/adminpeople/adminpeople",
         "pages/scancode/scancode",
         "pages/stockreport/stockreport",
-        "pages/invite/invite"
-    ],
+        "pages/invite/invite",
+        "pages/warehouselayout/warehouselayout",
+        "pages/stockwarm/stockwarm", 
+        "pages/timeoutwarm/timeoutwarm"
+    ], 
     "window": {
         "backgroundTextStyle": "dark",
         "navigationBarBackgroundColor": "#0cca80",

@@ -1,59 +1,50 @@
 var wxCharts = require('../../utils/wxcharts.js');
 Page({
   data: {
-    operate: [{ icon: '/icon/warm.png', name: '入库', ido: 1 }, { icon: '/icon/ruku.png', name: '出库', ido: 2 }, { icon: '/icon/ruku.png', name: '仓库布局', ido: 3 }],//操作
-    record: [{ icon: '/icon/warm.png', name: '入库单', ido: 1 }, { icon: '/icon/ruku.png', name: '出库单', ido: 2 }],//记录
-    stock: [{ icon: '/icon/warm.png', name: '库存报告', ido: 1 }, { icon: '/icon/warm.png', name: '库存预警', ido: 2 }, { icon: '/icon/ruku.png', name: '过期预警', ido: 3 }],//库存
-    other: [{ icon: '/icon/warm.png', name: '分享给好友', ido: 1 }, { icon: '/icon/warm.png', name: '需求反馈', ido: 2 }, { icon: '/icon/ruku.png', name: '通知', ido: 3 }],//其他
     simdata: [{ name: "七日入库", num: 9000 }, { name: "七日出库", num: 6300 }, { name: "今日入库", num: 2000 }, { name: "今日出库", num: 300 }],
   },
-  chooseoperate(e) {
-    let ido = e.currentTarget.dataset.ido;
-    if (ido == 1) {
-      wx.navigateTo({
-        url: '../enterWarehouse/enterWarehouse',
-        complete: (res) => { },
-        fail: (res) => { },
-        success: (result) => { },
-      })
-    }
+  enterwarehouse(e) {
+    wx.navigateTo({
+      url: '../enterWarehouse/enterWarehouse',
+      complete: (res) => { },
+      fail: (res) => { },
+      success: (result) => { },
+    })
   },
-  chooserecord(e) {
-    let ido = e.currentTarget.dataset.ido;
-    if (ido == 1) {
-      wx.navigateTo({
-        url: '',
-        complete: (res) => { },
-        fail: (res) => { },
-        success: (result) => { },
-      })
-    }
+  enterstock(e) {
+    wx.navigateTo({
+      url: '../stockreport/stockreport',
+      complete: (res) => { },
+      fail: (res) => { },
+      success: (result) => { },
+    })
   },
-  choosestock(e) {
-    let ido = e.currentTarget.dataset.ido;
-    if (ido == 1) {
-      wx.navigateTo({
-        url: '../stockreport/stockreport',
-        complete: (res) => { },
-        fail: (res) => { },
-        success: (result) => { },
-      })
-    }
+  enterlayout(e) {
+    wx.navigateTo({ 
+      url: '../warehouselayout/warehouselayout',
+      complete: (res) => { },
+      fail: (res) => { },
+      success: (result) => { },
+    })
   },
-  chooseother(e) {
-    let ido = e.currentTarget.dataset.ido;
-    if (ido == 1) {
-      wx.navigateTo({
-        url: '',
-        complete: (res) => { },
-        fail: (res) => { },
-        success: (result) => { },
-      })
-    }
+  enterstockwarm(e){
+    wx.navigateTo({ 
+      url: '../stockwarm/stockwarm',
+      complete: (res) => { },
+      fail: (res) => { },
+      success: (result) => { },
+    })
+  },
+  entertimeoutwarm(e){
+    wx.navigateTo({ 
+      url: '../timeoutwarm/timeoutwarm',
+      complete: (res) => { },
+      fail: (res) => { },
+      success: (result) => { },
+    })
   },
   //点击显示
   touchHandler: function (e) {
-
     lineChart.showToolTip(e, {
       background: '#7cb5ec',
       format: function (item, category) {
@@ -83,7 +74,7 @@ Page({
   onLoad: function (e) {
     var windowWidth = wx.getSystemInfoSync().windowWidth
     var simulationData = this.getstockData();
-     lineChart = new wxCharts({
+    lineChart = new wxCharts({
       canvasId: 'lineCanvas',
       type: 'line',
       categories: simulationData.categories,

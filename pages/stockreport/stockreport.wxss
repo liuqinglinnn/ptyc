@@ -39,7 +39,7 @@ page {
 .activitylist .activitylistfor {
   width: 95%;
   height: 250rpx;
-  background-color: white;
+  background-color: ;
   margin-right: 2.5%;
   margin-left: 2.5%;
   margin-top: 25rpx;

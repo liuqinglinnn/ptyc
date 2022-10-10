@@ -42,7 +42,7 @@ Page({
     });
   },
   //跳转到扫码页面
-  scancodenav(e) {
+  shodongtianjia(e) {
     wx.navigateTo({
       url: '../scancode/scancode?oid=' + this.data.oid,
     })

@@ -1,0 +1,3 @@
+<view class="map">
+  <cropper class="maparea" url="{{ originUrl }}" ratio="{{ ratio }}"></cropper>
+</view>

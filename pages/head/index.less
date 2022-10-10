@@ -1,23 +1,40 @@
 page {
-    background-color: #f2f2f2;
+    background-color: rgb(245, 245, 245);
+}
+
+.zhezhao {
+    width     : 100%;
+    height    : 1700rpx;
+    position  : absolute;
+    z-index   : 0;
+    top       : 0;
+    background: -webkit-linear-gradient(rgb(12, 202, 128), rgb(245, 245, 245));
+
+}
+
+.body {
+    position: absolute;
+    width   : 100%;
+    height  : auto;
 }
 
 .title1 {
-    font-weight   : 500;
+    font-weight   : bolder;
     font-size     : 45rpx;
     margin-top    : 20rpx;
     letter-spacing: 5rpx;
     width         : 95%;
-    margin-left   : 2.5%;
+    margin-left   : 2.75%;
+    z-index       : 1;
 }
 
 .title2 {
-    font-weight   : 500;
+    font-weight   : bolder;
     font-size     : 45rpx;
     margin-top    : 5rpx;
     letter-spacing: 5rpx;
     width         : 95%;
-    margin-left   : 2.5%;
+    margin-left   : 2.75%;
     margin-bottom : 25rpx;
 }
 
@@ -67,6 +84,7 @@ page {
     background-color: white;
 
     .canvas {
+        border-radius   : 5rpx;
         background-color: white;
         display         : flex;
         flex-direction  : column;
@@ -77,208 +95,149 @@ page {
     }
 }
 
+.operate_text {
+    margin-left   : 45rpx;
+    margin-top    : 25rpx;
+    font-weight   : bolder;
+    font-size     : 35rpx;
+    letter-spacing: 5rpx;
+    width         : 80rpx;
+    padding-bottom: 15rpx;
+    border-bottom : 2px solid rgb(12, 202, 128);
+}
+
+.operate_text2 {
+    margin-left   : 45rpx;
+    margin-top    : 25rpx;
+    font-weight   : bolder;
+    font-size     : 35rpx;
+    letter-spacing: 5rpx;
+    width         : 80rpx;
+    padding-bottom: 15rpx;
+    border-bottom : 2px solid rgb(255, 213, 36);
+}
 
 .operate {
-    margin-top      : 30rpx;
-    margin-left     : 5%;
-    background-color: white;
-    width           : 90%;
-    display         : flex;
-    flex-direction  : column;
-    height          : 300rpx;
-
-    .operate_text {
-        margin-left: 25rpx;
-        margin-top : 25rpx;
-        font-weight: bold;
-        font-size  : 30rpx;
-
-    }
+    border-top     : 1rpx solid rgb(245, 245, 245);
+    margin-left    : 2.5%;
+    width          : 95%;
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+    height         : 400rpx;
 
     .operate_content {
-        margin-top     : 50rpx;
         display        : flex;
         flex-direction : row;
         justify-content: center;
         align-items    : center;
         font-size      : 30rpx;
 
-        .operate_content_ {
+        .oleft {
+            width          : 50%;
             display        : flex;
             flex-direction : column;
             justify-content: center;
             align-items    : center;
-            margin-left    : 15rpx;
-            margin-right   : 15rpx;
-            width          : 150rpx;
 
-            .operate_content_icon {
-                display        : flex;
-                flex-direction : column;
-                justify-content: center;
-                align-items    : center;
-                width          : 50rpx;
-                height         : 50rpx;
-                margin-bottom  : 10rpx;
+            .ruku {
+                width           : 300rpx;
+                display         : flex;
+                flex-direction  : row;
+                justify-content : left;
+                align-items     : center;
+                height          : 150rpx;
+                margin          : 20rpx;
+                border-radius   : 35rpx;
+                color           : rgb(10, 199, 133);
+                letter-spacing  : 5rpx;
+                background-color: rgb(255, 255, 255);
+                box-shadow      : 0px 0px 10px rgb(175, 175, 175);
 
-                .operate_content_icon_image {
-                    width : 50rpx;
-                    height: 50rpx;
+                .rukupic {
+                    width       : 75rpx;
+                    height      : 75rpx;
+                    margin-right: 10rpx;
+                    margin-left : 40rpx;
+
+                    .rukupic_ {
+                        width : 75rpx;
+                        height: 75rpx;
+                    }
+                }
+
+                .rukutex {
+                    font-weight: bolder;
+                    margin-left: 10rpx;
+                    font-size  : 30rpx;
                 }
             }
         }
 
-    }
-}
-
-.record {
-    margin-top      : 30rpx;
-    margin-left     : 5%;
-    background-color: white;
-    width           : 90%;
-    display         : flex;
-    flex-direction  : column;
-    height          : 300rpx;
-
-    .record_text {
-        margin-left: 25rpx;
-        margin-top : 25rpx;
-        font-weight: bold;
-        font-size  : 30rpx;
-
-    }
-
-    .record_content {
-        margin-top     : 50rpx;
-        display        : flex;
-        flex-direction : row;
-        justify-content: center;
-        align-items    : center;
-        font-size      : 30rpx;
-
-        .record_content_ {
+        .oleft2 {
+            width          : 50%;
             display        : flex;
             flex-direction : column;
             justify-content: center;
             align-items    : center;
-            margin-left    : 15rpx;
-            margin-right   : 15rpx;
-            width          : 150rpx;
 
-            .record_content_icon {
-                display        : flex;
-                flex-direction : row;
-                justify-content: center;
-                align-items    : center;
-                width          : 50rpx;
-                height         : 50rpx;
-                margin-bottom  : 10rpx;
+            .ruku2 {
+                width           : 300rpx;
+                display         : flex;
+                flex-direction  : row;
+                justify-content : left;
+                align-items     : center;
+                height          : 340rpx;
+                margin          : 20rpx;
+                border-radius   : 35rpx;
+                color           : rgb(10, 199, 133);
+                letter-spacing  : 5rpx;
+                background-color: rgb(255, 255, 255);
+                box-shadow      : 0px 0px 10px rgb(175, 175, 175);
 
-                .record_content_icon_image {
-                    width : 50rpx;
-                    height: 50rpx;
+                .rukupic2 {
+                    width       : 75rpx;
+                    height      : 75rpx;
+                    margin-right: 10rpx;
+                    margin-left : 40rpx;
+
+                    .rukupic_2 {
+                        width : 75rpx;
+                        height: 75rpx;
+                    }
                 }
-            }
-        }
 
-    }
-}
-
-.stock {
-    margin-top      : 30rpx;
-    margin-bottom   : 30rpx;
-    margin-left     : 5%;
-    background-color: white;
-    width           : 90%;
-    display         : flex;
-    flex-direction  : column;
-    height          : 300rpx;
-
-    .stock_text {
-        margin-left: 25rpx;
-        margin-top : 25rpx;
-        font-weight: bold;
-        font-size  : 30rpx;
-
-    }
-
-    .stock_content {
-        margin-top     : 50rpx;
-        display        : flex;
-        flex-direction : row;
-        justify-content: center;
-        align-items    : center;
-        font-size      : 30rpx;
-
-        .stock_content_ {
-            display        : flex;
-            flex-direction : column;
-            justify-content: center;
-            align-items    : center;
-            margin-left    : 15rpx;
-            margin-right   : 15rpx;
-            width          : 150rpx;
-
-            .stock_content_icon {
-                display        : flex;
-                flex-direction : row;
-                justify-content: center;
-                align-items    : center;
-                width          : 50rpx;
-                height         : 50rpx;
-                margin-bottom  : 10rpx;
-
-                .stock_content_icon_image {
-                    width : 50rpx;
-                    height: 50rpx;
+                .rukutex2 {
+                    font-weight: bolder;
+                    margin-left: 10rpx;
+                    font-size  : 30rpx;
                 }
             }
         }
     }
 }
+
 
 .other {
-    margin-top      : 30rpx;
-    margin-bottom   : 30rpx;
-    margin-left     : 5%;
-    background-color: white;
-    width           : 90%;
-    display         : flex;
-    flex-direction  : column;
+    margin-bottom: 30rpx;
+    margin-left  : 5%;
+    border-bottom: 2px solid rgb(235, 235, 235);
+    border-top   : 2px solid rgb(235, 235, 235);
+
+    width         : 90%;
+    display       : flex;
+    flex-direction: column;
 
     .other_content {
         margin-top     : 50rpx;
         margin-bottom  : 50rpx;
+        margin-left    : 20rpx;
         display        : flex;
         flex-direction : row;
-        justify-content: center;
+        justify-content: left;
         align-items    : center;
         font-size      : 30rpx;
-
-        .other_content_ {
-            display        : flex;
-            flex-direction : column;
-            justify-content: center;
-            align-items    : center;
-            margin-left    : 15rpx;
-            margin-right   : 15rpx;
-            width          : 150rpx;
-
-            .other_content_icon {
-                display        : flex;
-                flex-direction : row;
-                justify-content: center;
-                align-items    : center;
-                width          : 50rpx;
-                height         : 50rpx;
-                margin-bottom  : 10rpx;
-
-                .other_content_icon_image {
-                    width : 50rpx;
-                    height: 50rpx;
-                }
-            }
-        }
     }
 }
 

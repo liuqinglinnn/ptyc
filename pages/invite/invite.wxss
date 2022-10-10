@@ -1,10 +1,80 @@
 page {
-  background-color: #0cca80;
+  background: -webkit-linear-gradient(#0cca80, #f5f5f5);
+}
+.user {
+  width: 80%;
+  margin-left: 10%;
+  height: 200rpx;
+  border-radius: 15rpx;
+  background-color: white;
+  box-shadow: 3rpx 3rpx 10rpx 2rpx #c8c3c3;
+  display: flex;
+  flex-direction: row;
+  margin-top: 25rpx;
+}
+.user .userpicture {
+  height: 100rpx;
+  width: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50rpx;
+  margin-top: 50rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user .userpicture .userpicture_img {
+  height: 100rpx;
+  width: 100rpx;
+}
+.user .userinfo {
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  width: 200rpx;
+  margin-left: 15rpx;
+  margin-top: 50rpx;
+  font-size: 25rpx;
+  align-items: center;
+}
+.user .userinfo .username {
+  margin-left: 20rpx;
+  width: auto;
+  font-size: 30rpx;
+  color: #0cca80;
+  font-weight: bold;
+}
+.user .userinfo .userlevel {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5rpx;
+}
+.user .userinfo .userlevel .userlevel_img {
+  width: 75rpx;
+  height: 75rpx;
+}
+.user .usericon {
+  position: absolute;
+  right: 5%;
+  height: 30rpx;
+  display: flex;
+  flex-direction: column;
+  width: 30rpx;
+  margin-top: 85rpx;
+  justify-content: center;
+  align-items: center;
+}
+.user .usericon .usericonpicture {
+  height: 30rpx;
+  width: 30rpx;
 }
 .erweima {
-  width: 95%;
+  width: 80%;
   background-color: white;
-  margin-left: 2.5%;
+  margin-left: 10%;
   border-radius: 15rpx;
   margin-top: 25rpx;
 }
@@ -38,6 +108,8 @@ page {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
 }
 .erweima .body .body_img {
   width: 200px;
@@ -62,6 +134,11 @@ page {
   color: #0cca80;
 }
 .erweima .information .information_text {
+  height: 75rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin-left: 25rpx;
   font-size: 30rpx;
   color: #0cca80;

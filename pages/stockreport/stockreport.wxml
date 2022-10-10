@@ -5,13 +5,13 @@
         <input class="search_input" value="{{inputvalue}}" type="text" placeholder="支持搜索商品名，规格名" bindinput="inputevent">
         </input>
     </view>
-    <view class="cancel" bindtap="cancelsearch">
-        取消
+    <view class="cancel" bindtap="search">
+        搜索
     </view>
 </view>
 <view class="summary" hover-class="none" hover-stop-propagation="false">
     <view class="container_text" hover-class="none" hover-stop-propagation="false">
-        仓库概览:
+        库位评分:
     </view>
     <view class="stockhead">
         <view class="stockhead_" wx:for="{{simdata}}" wx:for-index="idx" wx:for-item="item">
@@ -26,25 +26,33 @@
 </view>
 <view class="summary" hover-class="none" hover-stop-propagation="false">
     <view class="container_text" hover-class="none" hover-stop-propagation="false">
-        仓库详情:
+        库存报表:
     </view>
-
-</view> 
+    <view class="container_text" hover-class="none" hover-stop-propagation="false">
+        库存分析:
+    </view>
+    <view class="container_text" hover-class="none" hover-stop-propagation="false">
+        库存详情:
+    </view>
+    <view class="container_text" hover-class="none" hover-stop-propagation="false">
+        问题库存，库存安全值
+    </view>
+</view>
 <view class="activitylist">
-    <view class="activitylistfor" wx:for="{{activity}}" wx:for-index="idx" wx:for-item="item">
+    <view class="activitylistfor" wx:for="{{smoke}}" wx:for-index="idx" wx:for-item="item">
         <view class="activitylistforitem" hover-class="none" hover-stop-propagation="false" bindtap="showdetail"
             data-id="{{item.id}}">
             <view class="pic" hover-class="none" hover-stop-propagation="false">
-                <image class="pic_img" src="{{item.picture[0]}}" mode="aspectFill">
+                <image class="pic_img" src="{{item.img}}" mode="aspectFill">
                 </image>
             </view>
             <view class="detail" hover-class="none" hover-stop-propagation="false">
                 <view class="hh">
                     <view class="head" hover-class="none" hover-stop-propagation="false">
-                        {{item.head}}
+                        {{item.name}}
                     </view>
                     <view class="mode" hover-class="none" hover-stop-propagation="false">
-                        {{item.mode}}
+                        还没想好
                     </view>
                 </view>
                 <view class="other" hover-class="none" hover-stop-propagation="false">
@@ -52,28 +60,28 @@
                         <image class="acticon" src="/icon/place.png" mode="aspectFill">
                         </image>
                         <view class="placetext">
-                            {{item.place}}
+                            {{item.company}}
                         </view>
                     </view>
                     <view class="time">
                         <image class="acticon" src="/icon/time.png" mode="aspectFill">
                         </image>
                         <view class="timetext">
-                            {{item.starttime}}
+                            444
                         </view>
                     </view>
                     <view class="num">
                         <image class="acticon" src="/icon/people.png" mode="aspectFill">
                         </image>
                         <view class="numtext">
-                            {{item.asginnum}}/{{item.allnum}}人
+                            555/6666人
                         </view>
                     </view>
                     <view class="classify">
                         <image class="acticon" src="/icon/classify.png" mode="aspectFill">
                         </image>
                         <view class="classifytext">
-                            {{item.classify1}}
+                            {{item.zhuangtai}}
                         </view>
                     </view>
                 </view>
@@ -84,7 +92,7 @@
             </view>
         </view>
     </view>
-</view> 
+</view>
 <view class="buttom">
     <view class="one" bindtap="">
         <view class="onetext">

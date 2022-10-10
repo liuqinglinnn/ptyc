@@ -1,9 +1,41 @@
-<form class="enter_form" bindsubmit="formSubmit" bindreset="">
+<view class="zhezhao">
+
+</view>
+<view class="body">
     <view class="orderlist">
         <view class="scancode">
-            <view class="scancode_text" bindtap="scancodenav">
-                新增商品
+            <view class="shibie">
+                <view class="shibie_img">
+                    <image class="shibie_img_" src="/icon/imageinput.png">
+
+                    </image>
+                </view>
+                <view class="shibie_text">
+                    <view class="shibie_text_one">
+                        图片识别
+                    </view>
+                    <view class="shibie_text_two">
+                        批量添加烟草
+                    </view>
+                </view>
             </view>
+            <view class="shibie" bindtap="shodongtianjia">
+                <view class="shibie_img">
+                    <image class="shibie_img_" src="/icon/search.png">
+
+                    </image>
+                </view>
+                <view class="shibie_text">
+                    <view class="shibie_text_one">
+                        手动输入
+                    </view>
+                    <view class="shibie_text_two">
+                        单件添加烟草
+                    </view>
+                </view>
+
+            </view>
+
         </view>
         <view class="orderitem" wx:for="{{order}}" wx:for-index="idx" wx:for-item="item">
             <view class="orderitem_product">
@@ -42,4 +74,4 @@
             确认入库
         </view>
     </view>
-</form>
+</view>
