@@ -1,1 +1,73 @@
-/* pages/stockwarm/stockwarm.wxss */
+page {
+  background-color: #f5f5f5;
+}
+.zhezhao {
+  width: 100%;
+  height: 1700rpx;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  background: -webkit-linear-gradient(#0cca80, #f5f5f5);
+}
+.body {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.body .head {
+  width: 95%;
+  background-color: white;
+  margin-left: 2.5%;
+  margin-top: 20rpx;
+  border-radius: 15rpx;
+}
+.body .head .headtext {
+  font-size: 30rpx;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  border-bottom: 2rpx solid #f5f5f5;
+  padding-bottom: 15rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.body .head .headtext .headtext_img {
+  width: 50rpx;
+  height: 50rpx;
+}
+.body .head .headtext .headtext_img .headtext_img_ {
+  width: 50rpx;
+  height: 50rpx;
+}
+.body .head .headnum {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+.body .head .headnum .headnum_ {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15rpx;
+  width: 33%;
+  color: black;
+}
+.body .head .headnum .headnum_ .headnum_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headt {
+  font-size: 30rpx;
+  padding: 10rpx;
+}
+.headtn {
+  font-size: 40rpx;
+  padding: 10rpx;
+  color: #0cca80;
+}

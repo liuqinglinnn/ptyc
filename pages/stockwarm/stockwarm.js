@@ -1,37 +1,21 @@
-// pages/stockwarm/stockwarm.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
+    summary: [{ name: '库存预警值', num: 20 }, { name: '库存安全值', num: 80 }],
 
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad(options) {
 
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady() {
 
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
   onShow() {
 
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
   onHide() {
 
   },

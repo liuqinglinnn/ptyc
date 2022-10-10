@@ -1,2 +1,35 @@
-<!--pages/stockwarm/stockwarm.wxml-->
-<text>pages/stockwarm/stockwarm.wxml</text>
+<view class="zhezhao">
+
+</view>
+<view class="body">
+  <view class="head">
+    <view class="headtext">
+      <view class="headtext_img">
+        <image class="headtext_img_" src="../../icon/place.png">
+        </image>
+      </view>
+      <view class="">
+        平潭烟草
+      </view>
+    </view>
+    <view class="headnum">
+      <view
+        class="headnum_"
+        wx:for="{{summary}}"
+        wx:for-index="idx"
+        wx:for-item="item"
+      >
+        <view class="headnum_right">
+          <view class="headt">
+            {{item.name}}
+          </view>
+          <view class="headtn">
+            {{item.num}}%
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
